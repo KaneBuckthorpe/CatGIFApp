@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6FB15F0B292C04B1003DDB40 /* CatGIFAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB15F0A292C04B1003DDB40 /* CatGIFAppApp.swift */; };
-		6FB15F0D292C04B1003DDB40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB15F0C292C04B1003DDB40 /* ContentView.swift */; };
+		6F816BF4292D7EDE0003B07F /* GIFListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816BF3292D7EDE0003B07F /* GIFListViewFactory.swift */; };
+		6F816BF8292D7FFF0003B07F /* GIFListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816BF7292D7FFF0003B07F /* GIFListCard.swift */; };
+		6F816BFB292D80A90003B07F /* View+NavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816BFA292D80A90003B07F /* View+NavigationStyle.swift */; };
+		6F816BFD292D80F30003B07F /* GIFPreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816BFC292D80F30003B07F /* GIFPreviewData.swift */; };
+		6F816C00292D81D40003B07F /* GIFCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816BFF292D81D40003B07F /* GIFCardItem.swift */; };
+		6F816C03292D820E0003B07F /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816C02292D820E0003B07F /* GIFImage.swift */; };
+		6F816C06292D826D0003B07F /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6F816C05292D826D0003B07F /* FLAnimatedImage */; };
+		6FB15F0B292C04B1003DDB40 /* CatGIFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB15F0A292C04B1003DDB40 /* CatGIFApp.swift */; };
+		6FB15F0D292C04B1003DDB40 /* GIFList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB15F0C292C04B1003DDB40 /* GIFList.swift */; };
 		6FB15F0F292C04B3003DDB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB15F0E292C04B3003DDB40 /* Assets.xcassets */; };
 		6FB15F12292C04B3003DDB40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB15F11292C04B3003DDB40 /* Preview Assets.xcassets */; };
 		6FB15F1C292C04B3003DDB40 /* CatGIFAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB15F1B292C04B3003DDB40 /* CatGIFAppTests.swift */; };
@@ -34,9 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F816BF3292D7EDE0003B07F /* GIFListViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFListViewFactory.swift; sourceTree = "<group>"; };
+		6F816BF7292D7FFF0003B07F /* GIFListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFListCard.swift; sourceTree = "<group>"; };
+		6F816BFA292D80A90003B07F /* View+NavigationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationStyle.swift"; sourceTree = "<group>"; };
+		6F816BFC292D80F30003B07F /* GIFPreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFPreviewData.swift; sourceTree = "<group>"; };
+		6F816BFF292D81D40003B07F /* GIFCardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFCardItem.swift; sourceTree = "<group>"; };
+		6F816C02292D820E0003B07F /* GIFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
 		6FB15F07292C04B1003DDB40 /* CatGIFApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatGIFApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FB15F0A292C04B1003DDB40 /* CatGIFAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGIFAppApp.swift; sourceTree = "<group>"; };
-		6FB15F0C292C04B1003DDB40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6FB15F0A292C04B1003DDB40 /* CatGIFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGIFApp.swift; sourceTree = "<group>"; };
+		6FB15F0C292C04B1003DDB40 /* GIFList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFList.swift; sourceTree = "<group>"; };
 		6FB15F0E292C04B3003DDB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FB15F11292C04B3003DDB40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6FB15F17292C04B3003DDB40 /* CatGIFAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatGIFAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F816C06292D826D0003B07F /* FLAnimatedImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +85,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F816BF2292D7EC60003B07F /* ViewFactories */ = {
+			isa = PBXGroup;
+			children = (
+				6F816BF3292D7EDE0003B07F /* GIFListViewFactory.swift */,
+			);
+			path = ViewFactories;
+			sourceTree = "<group>";
+		};
+		6F816BF5292D7F460003B07F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6F816BF6292D7F520003B07F /* GIFList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6F816BF6292D7F520003B07F /* GIFList */ = {
+			isa = PBXGroup;
+			children = (
+				6F816BFE292D81AD0003B07F /* Models */,
+				6FB15F0C292C04B1003DDB40 /* GIFList.swift */,
+				6F816BF7292D7FFF0003B07F /* GIFListCard.swift */,
+			);
+			path = GIFList;
+			sourceTree = "<group>";
+		};
+		6F816BF9292D80770003B07F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6F816BFA292D80A90003B07F /* View+NavigationStyle.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6F816BFE292D81AD0003B07F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F816BFF292D81D40003B07F /* GIFCardItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F816C01292D81F20003B07F /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				6F816C02292D820E0003B07F /* GIFImage.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		6FB15EFE292C04B1003DDB40 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +158,11 @@
 		6FB15F09292C04B1003DDB40 /* CatGIFApp */ = {
 			isa = PBXGroup;
 			children = (
-				6FB15F0A292C04B1003DDB40 /* CatGIFAppApp.swift */,
-				6FB15F0C292C04B1003DDB40 /* ContentView.swift */,
+				6F816C01292D81F20003B07F /* UIComponents */,
+				6F816BF9292D80770003B07F /* Extensions */,
+				6F816BF2292D7EC60003B07F /* ViewFactories */,
+				6F816BF5292D7F460003B07F /* Screens */,
+				6FB15F0A292C04B1003DDB40 /* CatGIFApp.swift */,
 				6FB15F0E292C04B3003DDB40 /* Assets.xcassets */,
 				6FB15F10292C04B3003DDB40 /* Preview Content */,
 			);
@@ -106,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				6FB15F11292C04B3003DDB40 /* Preview Assets.xcassets */,
+				6F816BFC292D80F30003B07F /* GIFPreviewData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -143,6 +211,9 @@
 			dependencies = (
 			);
 			name = CatGIFApp;
+			packageProductDependencies = (
+				6F816C05292D826D0003B07F /* FLAnimatedImage */,
+			);
 			productName = CatGIFApp;
 			productReference = 6FB15F07292C04B1003DDB40 /* CatGIFApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +286,9 @@
 				Base,
 			);
 			mainGroup = 6FB15EFE292C04B1003DDB40;
+			packageReferences = (
+				6F816C04292D826D0003B07F /* XCRemoteSwiftPackageReference "FLAnimatedImage" */,
+			);
 			productRefGroup = 6FB15F08292C04B1003DDB40 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +331,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FB15F0D292C04B1003DDB40 /* ContentView.swift in Sources */,
-				6FB15F0B292C04B1003DDB40 /* CatGIFAppApp.swift in Sources */,
+				6F816BF8292D7FFF0003B07F /* GIFListCard.swift in Sources */,
+				6FB15F0D292C04B1003DDB40 /* GIFList.swift in Sources */,
+				6F816C03292D820E0003B07F /* GIFImage.swift in Sources */,
+				6F816C00292D81D40003B07F /* GIFCardItem.swift in Sources */,
+				6FB15F0B292C04B1003DDB40 /* CatGIFApp.swift in Sources */,
+				6F816BFD292D80F30003B07F /* GIFPreviewData.swift in Sources */,
+				6F816BF4292D7EDE0003B07F /* GIFListViewFactory.swift in Sources */,
+				6F816BFB292D80A90003B07F /* View+NavigationStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +663,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F816C04292D826D0003B07F /* XCRemoteSwiftPackageReference "FLAnimatedImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flipboard/FLAnimatedImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.16;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F816C05292D826D0003B07F /* FLAnimatedImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F816C04292D826D0003B07F /* XCRemoteSwiftPackageReference "FLAnimatedImage" */;
+			productName = FLAnimatedImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6FB15EFF292C04B1003DDB40 /* Project object */;
 }
