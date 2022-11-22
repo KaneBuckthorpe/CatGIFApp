@@ -9,6 +9,8 @@ import SwiftUI
 
 enum GIFListViewFactory {
     static func gifList() -> some View {
-        return EmptyView()
+        let service = GifListServiceAdapter()
+        let viewModel = PaginationGIFListViewModel(service: service)
+        return GIFList(viewModel: viewModel)
     }
 }

@@ -20,6 +20,7 @@
 		6F816C12292D880B0003B07F /* TheCatAPIURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816C11292D880B0003B07F /* TheCatAPIURLBuilder.swift */; };
 		6F816C15292D88AD0003B07F /* CatAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816C14292D88AD0003B07F /* CatAPIModel.swift */; };
 		6F816C18292D890B0003B07F /* TheCatAPIGIFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816C17292D890B0003B07F /* TheCatAPIGIFService.swift */; };
+		6F816C1B292D89A80003B07F /* GifListServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816C1A292D89A80003B07F /* GifListServiceAdapter.swift */; };
 		6FB15F0B292C04B1003DDB40 /* CatGIFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB15F0A292C04B1003DDB40 /* CatGIFApp.swift */; };
 		6FB15F0D292C04B1003DDB40 /* GIFList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB15F0C292C04B1003DDB40 /* GIFList.swift */; };
 		6FB15F0F292C04B3003DDB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB15F0E292C04B3003DDB40 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		6F816C11292D880B0003B07F /* TheCatAPIURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatAPIURLBuilder.swift; sourceTree = "<group>"; };
 		6F816C14292D88AD0003B07F /* CatAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIModel.swift; sourceTree = "<group>"; };
 		6F816C17292D890B0003B07F /* TheCatAPIGIFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatAPIGIFService.swift; sourceTree = "<group>"; };
+		6F816C1A292D89A80003B07F /* GifListServiceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifListServiceAdapter.swift; sourceTree = "<group>"; };
 		6FB15F07292C04B1003DDB40 /* CatGIFApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatGIFApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB15F0A292C04B1003DDB40 /* CatGIFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGIFApp.swift; sourceTree = "<group>"; };
 		6FB15F0C292C04B1003DDB40 /* GIFList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFList.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		6F816BF6292D7F520003B07F /* GIFList */ = {
 			isa = PBXGroup;
 			children = (
+				6F816C19292D89790003B07F /* Services */,
 				6F816C07292D84620003B07F /* ViewModels */,
 				6F816BFE292D81AD0003B07F /* Models */,
 				6FB15F0C292C04B1003DDB40 /* GIFList.swift */,
@@ -195,6 +198,14 @@
 			isa = PBXGroup;
 			children = (
 				6F816C17292D890B0003B07F /* TheCatAPIGIFService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6F816C19292D89790003B07F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6F816C1A292D89A80003B07F /* GifListServiceAdapter.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -410,6 +421,7 @@
 				6F816C18292D890B0003B07F /* TheCatAPIGIFService.swift in Sources */,
 				6F816C10292D87E80003B07F /* TheCatAPIRequestBuilder.swift in Sources */,
 				6F816BF4292D7EDE0003B07F /* GIFListViewFactory.swift in Sources */,
+				6F816C1B292D89A80003B07F /* GifListServiceAdapter.swift in Sources */,
 				6F816BFB292D80A90003B07F /* View+NavigationStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
