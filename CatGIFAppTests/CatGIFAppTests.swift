@@ -42,6 +42,21 @@ final class CatGIFAppTests: XCTestCase {
         error = await errorAsyncIterator.next()
         XCTAssertNotNil(error!)
     }
+    
+    func test_GifListCategoryFilter() async {
+        let hatCat = CatAPIModel(categories: [.init(name: "hat")], id: "0", url: .dummy)
+        let happyCat = CatAPIModel(categories: [.init(name: "happy")], id: "1", url: .dummy)
+        let funnyCat = CatAPIModel(categories: [.init(name: "funny")], id: "1", url: .dummy)
+
+        let filter = GifListCategoryFilter(["hat", "happy"])
+        
+        let filteredHat = filter.filter(cat: hatCat)
+        XCTAssertFalse(filteredHat)
+        let filteredHappy = filter.filter(cat: happyCat)
+        XCTAssertFalse(filteredHappy)
+        let filteredFunny = filter.filter(cat: funnyCat)
+        XCTAssertTrue(filteredFunny)
+    }
 }
 
 struct MockGIFListService: GIFPaginationListService {
