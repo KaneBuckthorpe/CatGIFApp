@@ -9,6 +9,12 @@ import XCTest
 @testable import CatGIFApp
 
 final class CatGIFAppTests: XCTestCase {
+    
+    func test_TheCatAPIURLBuilder() {
+        let builder = TheCatAPIURLBuilder.self
+        let url = builder.build(size: .thumb, limit: 2, page: 1)
+        XCTAssertEqual(url.absoluteString, "https://api.thecatapi.com/v1/images/search?size=thumb&mime_types=gif&limit=2&page=1&order=ASC")
+    }
 
     func test_PaginationGIFListViewModel_pagination() async {
         let viewModel = PaginationGIFListViewModel(service: MockGIFListService())

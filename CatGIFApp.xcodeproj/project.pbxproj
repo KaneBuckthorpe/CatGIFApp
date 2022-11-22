@@ -15,6 +15,11 @@
 		6F816C03292D820E0003B07F /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816C02292D820E0003B07F /* GIFImage.swift */; };
 		6F816C06292D826D0003B07F /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6F816C05292D826D0003B07F /* FLAnimatedImage */; };
 		6F816C09292D846E0003B07F /* PaginationGIFListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816C08292D846E0003B07F /* PaginationGIFListViewModel.swift */; };
+		6F816C0C292D87530003B07F /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816C0B292D87530003B07F /* DataLoader.swift */; };
+		6F816C10292D87E80003B07F /* TheCatAPIRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816C0F292D87E80003B07F /* TheCatAPIRequestBuilder.swift */; };
+		6F816C12292D880B0003B07F /* TheCatAPIURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816C11292D880B0003B07F /* TheCatAPIURLBuilder.swift */; };
+		6F816C15292D88AD0003B07F /* CatAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816C14292D88AD0003B07F /* CatAPIModel.swift */; };
+		6F816C18292D890B0003B07F /* TheCatAPIGIFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F816C17292D890B0003B07F /* TheCatAPIGIFService.swift */; };
 		6FB15F0B292C04B1003DDB40 /* CatGIFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB15F0A292C04B1003DDB40 /* CatGIFApp.swift */; };
 		6FB15F0D292C04B1003DDB40 /* GIFList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB15F0C292C04B1003DDB40 /* GIFList.swift */; };
 		6FB15F0F292C04B3003DDB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB15F0E292C04B3003DDB40 /* Assets.xcassets */; };
@@ -49,6 +54,11 @@
 		6F816BFF292D81D40003B07F /* GIFCardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFCardItem.swift; sourceTree = "<group>"; };
 		6F816C02292D820E0003B07F /* GIFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
 		6F816C08292D846E0003B07F /* PaginationGIFListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationGIFListViewModel.swift; sourceTree = "<group>"; };
+		6F816C0B292D87530003B07F /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		6F816C0F292D87E80003B07F /* TheCatAPIRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatAPIRequestBuilder.swift; sourceTree = "<group>"; };
+		6F816C11292D880B0003B07F /* TheCatAPIURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatAPIURLBuilder.swift; sourceTree = "<group>"; };
+		6F816C14292D88AD0003B07F /* CatAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIModel.swift; sourceTree = "<group>"; };
+		6F816C17292D890B0003B07F /* TheCatAPIGIFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatAPIGIFService.swift; sourceTree = "<group>"; };
 		6FB15F07292C04B1003DDB40 /* CatGIFApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatGIFApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB15F0A292C04B1003DDB40 /* CatGIFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGIFApp.swift; sourceTree = "<group>"; };
 		6FB15F0C292C04B1003DDB40 /* GIFList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFList.swift; sourceTree = "<group>"; };
@@ -146,6 +156,49 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		6F816C0A292D87290003B07F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6F816C0B292D87530003B07F /* DataLoader.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6F816C0D292D87BC0003B07F /* TheCatAPI */ = {
+			isa = PBXGroup;
+			children = (
+				6F816C16292D88FE0003B07F /* Services */,
+				6F816C13292D88900003B07F /* Models */,
+				6F816C0E292D87C90003B07F /* Builders */,
+			);
+			path = TheCatAPI;
+			sourceTree = "<group>";
+		};
+		6F816C0E292D87C90003B07F /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				6F816C0F292D87E80003B07F /* TheCatAPIRequestBuilder.swift */,
+				6F816C11292D880B0003B07F /* TheCatAPIURLBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		6F816C13292D88900003B07F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F816C14292D88AD0003B07F /* CatAPIModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F816C16292D88FE0003B07F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6F816C17292D890B0003B07F /* TheCatAPIGIFService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		6FB15EFE292C04B1003DDB40 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +222,8 @@
 		6FB15F09292C04B1003DDB40 /* CatGIFApp */ = {
 			isa = PBXGroup;
 			children = (
+				6F816C0D292D87BC0003B07F /* TheCatAPI */,
+				6F816C0A292D87290003B07F /* Utilities */,
 				6F816C01292D81F20003B07F /* UIComponents */,
 				6F816BF9292D80770003B07F /* Extensions */,
 				6F816BF2292D7EC60003B07F /* ViewFactories */,
@@ -342,13 +397,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F816C0C292D87530003B07F /* DataLoader.swift in Sources */,
 				6F816BF8292D7FFF0003B07F /* GIFListCard.swift in Sources */,
 				6FB15F0D292C04B1003DDB40 /* GIFList.swift in Sources */,
 				6F816C03292D820E0003B07F /* GIFImage.swift in Sources */,
 				6F816C09292D846E0003B07F /* PaginationGIFListViewModel.swift in Sources */,
+				6F816C12292D880B0003B07F /* TheCatAPIURLBuilder.swift in Sources */,
+				6F816C15292D88AD0003B07F /* CatAPIModel.swift in Sources */,
 				6F816C00292D81D40003B07F /* GIFCardItem.swift in Sources */,
 				6FB15F0B292C04B1003DDB40 /* CatGIFApp.swift in Sources */,
 				6F816BFD292D80F30003B07F /* GIFPreviewData.swift in Sources */,
+				6F816C18292D890B0003B07F /* TheCatAPIGIFService.swift in Sources */,
+				6F816C10292D87E80003B07F /* TheCatAPIRequestBuilder.swift in Sources */,
 				6F816BF4292D7EDE0003B07F /* GIFListViewFactory.swift in Sources */,
 				6F816BFB292D80A90003B07F /* View+NavigationStyle.swift in Sources */,
 			);
